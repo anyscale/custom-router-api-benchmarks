@@ -53,7 +53,7 @@ cmd = [
 ]
 
 ROUTER_MAP = {
-    # "pow_2": "ray.serve._private.request_router.pow_2_router.PowerOfTwoChoicesRequestRouter",
+    "pow_2": "ray.serve._private.request_router.pow_2_router.PowerOfTwoChoicesRequestRouter",
     "prefix_aware": "ray.serve.llm.request_router.PrefixCacheAffinityRouter",
 }
 
@@ -69,7 +69,7 @@ def main():
     for router_name in ROUTER_MAP:
         llm_config = BASE_LLM_CONFIG.model_copy(deep=True)
 
-        for replicas in [1]:
+        for replicas in [1, 2, 4, 6, 8, 10]:
             llm_config.deployment_config = dict(
                 autoscaling_config=dict(
                     min_replicas=replicas,
