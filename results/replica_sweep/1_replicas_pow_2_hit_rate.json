@@ -1,0 +1,10 @@
+{
+  "replicas": 1,
+  "router_name": "pow_2",
+  "worker_id": "0ddaed4229bdc0657686985bb502f2cda45a026151bd7c162b018b4b",
+  "gpu_prefix_cache_hits": 90687.99999999999,
+  "gpu_prefix_cache_queries": 123528.99999999997,
+  "gpu_prefix_cache_hit_rate": 0.7341433995256175,
+  "gpu_prefix_cache_hit_rate_percent": 73.41433995256175,
+  "timestamp": 1755301920.7407324
+}

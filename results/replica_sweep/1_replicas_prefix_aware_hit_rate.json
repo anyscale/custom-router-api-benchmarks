@@ -1,0 +1,10 @@
+{
+  "replicas": 1,
+  "router_name": "prefix_aware",
+  "worker_id": "50a90c959d053c70f7d1bdeaa94fa15d1de3db5e49d01e38a6d080bc",
+  "gpu_prefix_cache_hits": 9840.0,
+  "gpu_prefix_cache_queries": 21121.0,
+  "gpu_prefix_cache_hit_rate": 0.4658870318640216,
+  "gpu_prefix_cache_hit_rate_percent": 46.58870318640216,
+  "timestamp": 1755302066.6835752
+}
