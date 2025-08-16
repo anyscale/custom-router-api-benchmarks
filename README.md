@@ -33,3 +33,7 @@ python visualize_replica_sweep.py
 - Ray cluster, see k8s install steps [here](https://docs.ray.io/en/latest/cluster/kubernetes/getting-started/kuberay-operator-installation.html)
 - Docker image: rayproject/ray-llm:nightly-py311-cu128
 - Ray [nightly](https://docs.ray.io/en/latest/ray-overview/installation.html#daily-releases-nightlies) wheel
+
+# Set the following environment variables in an Anyscale Service `runtime_env` for optimal performance:
+- ANYSCALE_RAY_SERVE_THROUGHPUT_OPT=1
+- RAYLLM_ROUTER_TO_MODEL_REPLICA_RATIO=8
